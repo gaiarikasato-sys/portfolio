@@ -1,14 +1,16 @@
-import { skillGroups } from '../data/skills'
+import { useLang } from '../i18n/LanguageProvider'
 
 export default function Skills() {
+  const { t } = useLang()
+
   return (
     <section className="section wrap" id="skills">
       <div className="section__mark">
-        <h2>Tools & stack</h2>
-        <span className="section__tag">by category</span>
+        <h2>{t.skills.heading}</h2>
+        <span className="section__tag">{t.skills.tag}</span>
       </div>
       <div className="skills__grid">
-        {skillGroups.map((group) => (
+        {t.skills.groups.map((group) => (
           <div key={group.label}>
             <div className="skills__group-label">{group.label}</div>
             <div className="skills__chips">

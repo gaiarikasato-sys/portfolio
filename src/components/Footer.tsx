@@ -1,15 +1,19 @@
+import { useLang } from '../i18n/LanguageProvider'
+
 export default function Footer() {
+  const { t } = useLang()
   const year = new Date().getFullYear()
 
   return (
     <footer className="site-footer" id="contact">
-      <span>© {year} Rika Sato</span>
       <span>
-        {/* TODO: replace with your real contact details */}
-        <a href="mailto:your-email@example.com">your-email@example.com</a>
+        © {year} {t.footer.copyright}
+      </span>
+      <span>
+        <a href="mailto:gaia.rika.sato@gmail.com">gaia.rika.sato@gmail.com</a>
         {' / '}
-        <a href="https://github.com/your-username" target="_blank" rel="noreferrer">
-          github.com/your-username
+        <a href="https://github.com/gaiarikasato-sys" target="_blank" rel="noreferrer">
+          github.com/gaiarikasato-sys
         </a>
       </span>
     </footer>

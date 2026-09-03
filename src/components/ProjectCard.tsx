@@ -1,4 +1,4 @@
-import type { Project } from '../data/projects'
+import type { Project } from '../i18n/types'
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -8,7 +8,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           <div className="project__period">{project.period}</div>
           <div className="project__sector">{project.sector}</div>
         </div>
-        <div className="project__duration">{project.duration}</div>
+        {project.duration ? <div className="project__duration">{project.duration}</div> : null}
       </div>
 
       <h3>{project.title}</h3>

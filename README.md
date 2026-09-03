@@ -6,12 +6,16 @@ and a tools/stack overview — all sourced from the skill sheet.
 
 ## Before you publish
 
-- **Contact info** — `src/components/Footer.tsx` has placeholder email and
-  GitHub links (`your-email@example.com`, `github.com/your-username`).
-  Replace them with your real details.
-- **Copy** — the project summaries and bio in `src/data/` and
-  `src/components/Focus.tsx` and `Hero.tsx` were written from the skill
-  sheet. Read them over and adjust anything that doesn't sound like you.
+- **Contact info** — lives in `src/components/Footer.tsx`.
+- **Copy** — all display text lives in `src/i18n/en.ts` (English) and
+  `src/i18n/ja.ts` (Japanese); the two files share the `Dict` shape in
+  `src/i18n/types.ts`, so every string exists in both languages. Read
+  them over and adjust anything that doesn't sound like you — and keep
+  the two in sync when you edit. Language-neutral values (tech names,
+  tool lists) are in `src/i18n/shared.ts`.
+- **Language toggle** — the header has an EN / 日本語 switch. It defaults
+  to Japanese for `ja-*` browsers, otherwise English, and remembers the
+  choice in `localStorage`.
 - **Design tokens** — colors, type and spacing all live as CSS variables at
   the top of `src/index.css` if you want to adjust the palette.
 
@@ -55,7 +59,8 @@ Your site will be live at `https://<your-username>.github.io/<repo-name>/`.
 ```
 src/
   components/   UI sections (Hero, Projects, Experience, Skills, ...)
-  data/         Content — projects.ts, experience.ts, skills.ts
+  i18n/         Content + translations — en.ts, ja.ts, shared.ts,
+                types.ts, LanguageProvider.tsx
   index.css     Design tokens and all styling
   App.tsx       Page composition
 ```

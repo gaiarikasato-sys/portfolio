@@ -1,28 +1,22 @@
+import { useLang } from '../i18n/LanguageProvider'
+
 export default function Hero() {
+  const { t } = useLang()
+
   return (
     <section className="hero wrap">
       <p className="hero__eyebrow">
-        Frontend-focused software engineer <span>/</span> Tokyo
+        {t.hero.eyebrowRole} <span>/</span> {t.hero.eyebrowLocation}
       </p>
-      <h1>Thirteen years of turning interface specs into software people use.</h1>
-      <p className="hero__lede">
-        I build the browser side of complex systems — dense admin tools, canvas and PDF-heavy
-        editors, map interfaces — mostly for government and enterprise teams, in React,
-        TypeScript and Next.js. Recently I've been picking up backend and API design too.
-      </p>
+      <h1>{t.hero.heading}</h1>
+      <p className="hero__lede">{t.hero.lede}</p>
       <div className="hero__stats">
-        <div className="hero__stat">
-          <b>13 yrs</b>
-          <span>professional experience</span>
-        </div>
-        <div className="hero__stat">
-          <b>12</b>
-          <span>systems shipped</span>
-        </div>
-        <div className="hero__stat">
-          <b>EN / JP</b>
-          <span>working languages</span>
-        </div>
+        {t.hero.stats.map((stat) => (
+          <div className="hero__stat" key={stat.label}>
+            <b>{stat.value}</b>
+            <span>{stat.label}</span>
+          </div>
+        ))}
       </div>
     </section>
   )

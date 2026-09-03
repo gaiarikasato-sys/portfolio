@@ -1,14 +1,16 @@
-import { featuredProjects } from '../data/projects'
+import { useLang } from '../i18n/LanguageProvider'
 import ProjectCard from './ProjectCard'
 
 export default function Projects() {
+  const { t } = useLang()
+
   return (
     <section className="section wrap" id="work">
       <div className="section__mark">
-        <h2>Recent work</h2>
-        <span className="section__tag">2024 — 2026</span>
+        <h2>{t.work.heading}</h2>
+        <span className="section__tag">{t.work.tag}</span>
       </div>
-      {featuredProjects.map((project) => (
+      {t.work.projects.map((project) => (
         <ProjectCard project={project} key={project.title} />
       ))}
     </section>
