@@ -17,18 +17,18 @@ export const en: Dict = {
     eyebrowRole: 'Frontend-focused software engineer',
     eyebrowLocation: 'Tokyo',
     heading: '13 years of building frontend applications for complex systems.',
-    lede: "I build frontend applications for complex systems — from admin tools and PDF/canvas-based editors to map interfaces — primarily for government and enterprise projects. My core stack is React, TypeScript and Next.js, and in recent years I've also expanded into backend development and API design.",
+    lede: "I build frontend applications for complex systems — from admin tools and PDF/canvas-based editors to map interfaces — primarily for government and enterprise projects. My core stack is React, TypeScript and Next.js, and in recent years I've also taken on Web API development, requirements definition and system design.",
     stats: [
       { value: '13 yrs', label: 'professional experience' },
-      { value: '12', label: 'projects' },
+      { value: '10', label: 'projects' },
       { value: 'EN / JP', label: 'working languages' },
     ],
   },
   about: {
     tag: 'about',
     ledes: [
-      "For most of my career, I've focused on frontend development for large-scale manufacturing and government systems. This gave me extensive hands-on experience with HTML5, CSS3, JavaScript and jQuery in production environments where reliability and maintainability were essential.",
-      "In recent years, I've worked primarily with TypeScript, React and Next.js while expanding into backend development with Node.js, as well as API, database and interface design. Having spent part of my childhood in the Philippines, I'm comfortable working in both English and Japanese. I also place a strong emphasis on clear communication, regular progress reporting and documentation.",
+      "For most of my career, I've focused on frontend development for large-scale government and enterprise systems, covering design, development and testing. This gave me extensive hands-on experience with HTML5, CSS3, JavaScript and jQuery in production environments where reliability and maintainability were essential.",
+      "In recent years, I've worked primarily with TypeScript, React and Next.js, while also building Web APIs with Node.js, Express and NestJS, working on database integration, and taking part in requirements definition and design. I'm a Japanese national who studied overseas in the Philippines, so I'm comfortable researching technical material in English and coordinating specifications and progress with overseas development teams. I place a strong emphasis on communication with clients and team members — confirming open questions and spec inconsistencies early so development keeps moving smoothly.",
     ],
     points: [
       {
@@ -40,12 +40,12 @@ export const en: Dict = {
         body: 'TypeScript across React and Next.js codebases, with maintainability and scalability in mind.',
       },
       {
-        title: 'Full-stack capability',
-        body: 'Comfortable working with APIs, backend logic and data models when required.',
+        title: 'APIs & design',
+        body: 'Web APIs with Node.js, Express and NestJS, plus requirements definition, interface and API design.',
       },
       {
-        title: 'Clear communication',
-        body: 'Regular progress reporting and documentation to keep the team aligned.',
+        title: 'Bilingual collaboration',
+        body: 'Requirements discussions with clients and spec coordination with offshore teams, in Japanese and English.',
       },
     ],
   },
@@ -58,13 +58,15 @@ export const en: Dict = {
         duration: '',
         sector: 'Rental services · SaaS',
         title: 'Rental Order Management Platform Modernization',
-        role: 'Frontend engineer / backend API design',
+        role: 'Frontend engineer / requirements & API design',
         summary:
-          'A legacy inventory and order management system for a device-rental business was rebuilt from the ground up. I was responsible for the frontend architecture and development, including the locker-management screens used by staff to check devices in and out. I also contributed to backend API design and acceptance-criteria documentation.',
+          'A replacement of the order management system for a business that rents out tablets, cameras and smartphones. I worked mainly on the frontend, designing and building the locker-management screens in Next.js, React and Material UI, and joined client meetings to pin down requirements and screen specifications. For the next phase of the replacement, I moved on to requirements definition, design documents and API specification design.',
         highlights: [
-          'Designed and implemented the locker-management screens from scratch, replacing an ageing internal tool',
-          'Contributed to backend API design alongside the platform rebuild',
-          'Created acceptance criteria and specification documentation in Confluence to support development and team alignment',
+          'Designed and implemented the locker-management screens — 8 screens in TypeScript, React and Next.js',
+          'Implemented API integration for around 9 APIs using SWR and Axios',
+          'Joined client meetings to confirm requirements and screen behaviour; flagged inconsistencies with existing specs to stakeholders and helped resolve them',
+          'For the next phase, investigated the existing system and design documents, then wrote requirements definitions, design documents and API specifications',
+          'Wrote specifications and acceptance criteria in Confluence to keep development and the team aligned',
         ],
         stack: projectStacks.rental,
       },
@@ -75,13 +77,13 @@ export const en: Dict = {
         title: 'Building Permit Review System — Drawing Markup & Annotation Tools',
         role: 'Frontend engineer / backend development',
         summary:
-          'Building-permit reviews rely heavily on annotations made directly on architectural drawings. I developed a browser-based tool that allows reviewers to open PDF or image-based drawings and add freehand lines, shapes and notes directly in the browser.',
+          'Building-permit reviews rely heavily on annotations made directly on architectural drawings. I developed the main web-based editing screen, where reviewers open PDF or image drawings and draw and annotate on them directly in the browser, along with the Web APIs behind it.',
         highlights: [
-          'Built PDF and image viewers with pdf.js and jsPDF, handling large architectural drawings smoothly',
-          'Implemented freehand and shape-based markup on top of the viewer using Konva',
-          'Designed the UI and canvas/draw-area control logic in React and Next.js',
-          'Built the APIs for saving and loading annotation data in Next.js, using Prisma against SQL Server',
-          'Used TypeScript throughout the frontend to improve type safety and maintainability',
+          'Converted image files to PDF so every drawing is displayed through one common pdf.js-based viewer',
+          'Implemented drawing and editing on top of the viewer using Konva, plus display-size and scale controls',
+          'Built file export in PDF, PNG and JPEG formats',
+          'Built 12 Web APIs in NestJS, using Prisma against SQL Server for create, read, update and delete operations',
+          'Used TypeScript throughout, across React, Next.js and NestJS',
         ],
         stack: projectStacks.cde,
       },
@@ -95,32 +97,20 @@ export const en: Dict = {
         period: 'Oct 2025 —',
         title: 'Rental Order Management Platform Modernization',
         description:
-          'Frontend design and implementation, with involvement in backend design. Full case study above.',
+          'Frontend design and implementation, then requirements definition and API design for the next phase. Full case study above.',
         featured: true,
       },
       {
         period: 'Jun 2024 — Sep 2025',
         title: 'Building Permit Review System — Drawing Markup Tools',
-        description: 'Built the PDF and image annotation tools and their backend API. Full case study above.',
+        description: 'Built the PDF and image markup tools and their NestJS APIs. Full case study above.',
         featured: true,
       },
       {
-        period: 'Jan 2024 — Mar 2024',
-        title: 'Car-Share Platform Modernization',
-        description:
-          'Resolved production issues in an offshore-developed system and supported a multi-brand rebranding effort across UI copy, assets and security-related fixes.',
-      },
-      {
-        period: 'Oct 2023 — Dec 2023',
-        title: 'Internal Sales Tool Modernization',
-        description:
-          'Rebuilt a legacy intranet sales tool with a focus on security, using VB.NET and Excel VBA — 28 screens and 20 APIs.',
-      },
-      {
-        period: 'May 2023 — Sep 2023',
+        period: 'May 2023 — May 2024',
         title: 'Industrial Plant Software — Web Migration',
         description:
-          'Reverse-engineered an existing desktop application and reimplemented its functionality as a web application using JSF and JavaScript — 8 screens and 12 APIs.',
+          'Analysed an existing packaged application and took its web migration from basic, detailed and interface/API design through implementation — 8 screens in TypeScript and React, 12 APIs in Node.js and Express with Prisma. Explained specs to, reviewed deliverables from and tracked progress of an offshore team in Vietnam, in Japanese and English.',
       },
       {
         period: 'May 2021 — Apr 2023',
@@ -138,25 +128,25 @@ export const en: Dict = {
         period: 'Apr 2020 — Sep 2020',
         title: 'Banking Mobile Application',
         description:
-          'Developed administrative screens and Web APIs for a banking mobile application, in PHP on Docker and PostgreSQL.',
+          'Developed admin screens and Web APIs for a banking mobile app in Java and PHP, and managed progress and quality as subsystem leader.',
       },
       {
         period: 'Sep 2019 — Mar 2020',
         title: 'Government Common Platform — HTML5 Migration',
         description:
-          'Migrated legacy screens to HTML5 and implemented Web APIs based on existing servlet logic for a shared government platform.',
+          'Designed and built shared UI components and a developer sample site, migrated legacy screens to HTML5 and turned servlet EJB logic into Web APIs. Also handled schedule and quality management for the team.',
       },
       {
         period: 'Apr 2017 — Aug 2019',
         title: 'Government HR & Payroll System',
         description:
-          'Developed frontend libraries and Web APIs for a large-scale government HR and payroll system — 30K of an 88K jQuery codebase.',
+          'Developed the shared frontend library (30K of an 88K jQuery codebase) and server-side Java APIs for a large-scale government HR and payroll system.',
       },
       {
         period: 'Apr 2015 — Mar 2017',
         title: 'Government Notification System Modernization',
         description:
-          'Developed application screens and PDF generation functionality for a government command subsystem — 14 screens.',
+          'Developed 14 screens, Web API integration and Java/PHP server-side processing, plus 16 PDF report templates rendered with TCPDF.',
       },
       {
         period: 'Apr 2013 — Mar 2015',
