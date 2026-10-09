@@ -17,6 +17,7 @@ export const projectStacks = {
     'Docker',
     'Claude Code',
   ],
+  plant: ['TypeScript', 'React', 'Node.js', 'Express', 'Prisma', 'MySQL'],
   cde: ['TypeScript', 'React', 'Next.js', 'NestJS', 'Material UI', 'pdf.js', 'jsPDF', 'Konva', 'Prisma', 'SQL Server'],
 }
 

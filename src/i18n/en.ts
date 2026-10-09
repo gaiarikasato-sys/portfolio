@@ -51,7 +51,7 @@ export const en: Dict = {
   },
   work: {
     heading: 'Recent work',
-    tag: '2024 — 2026',
+    tag: '2023 — 2026',
     projects: [
       {
         period: '2025 — 2026',
@@ -87,6 +87,23 @@ export const en: Dict = {
         ],
         stack: projectStacks.cde,
       },
+      {
+        period: '2023 — 2024',
+        duration: '13 months',
+        sector: 'Industrial plant · packaged software',
+        title: 'Industrial Plant Software — Web Migration',
+        role: 'Frontend engineer / design & API development',
+        summary:
+          'An existing packaged application for the plant industry was migrated to a web system. I analysed how the current application worked, then took the migration from basic and detailed design through interface and API design to implementation — building the frontend in TypeScript and React and the APIs in Node.js and Express. I also worked with an offshore development team in Vietnam on the features they were responsible for.',
+        highlights: [
+          'Analysed the behaviour and specifications of the existing application to drive the web migration',
+          'Wrote the basic design, detailed design and interface/API design',
+          'Built 8 screens in TypeScript and React',
+          'Built 12 APIs in Node.js and Express, using Prisma against MySQL',
+          'Explained specifications to the offshore team in Vietnam, reviewed their deliverables and tracked progress, in Japanese and English',
+        ],
+        stack: projectStacks.plant,
+      },
     ],
   },
   experience: {
@@ -110,7 +127,8 @@ export const en: Dict = {
         period: 'May 2023 — May 2024',
         title: 'Industrial Plant Software — Web Migration',
         description:
-          'Analysed an existing packaged application and took its web migration from basic, detailed and interface/API design through implementation — 8 screens in TypeScript and React, 12 APIs in Node.js and Express with Prisma. Explained specs to, reviewed deliverables from and tracked progress of an offshore team in Vietnam, in Japanese and English.',
+          'Design through implementation of the web migration, plus offshore team coordination in Japanese and English. Full case study above.',
+        featured: true,
       },
       {
         period: 'May 2021 — Apr 2023',

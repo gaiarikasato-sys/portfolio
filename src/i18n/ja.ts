@@ -53,7 +53,7 @@ export const ja: Dict = {
   },
   work: {
     heading: '直近の仕事',
-    tag: '2024 — 2026',
+    tag: '2023 — 2026',
     projects: [
       {
         period: '2025 — 2026',
@@ -89,6 +89,23 @@ export const ja: Dict = {
         ],
         stack: projectStacks.cde,
       },
+      {
+        period: '2023 — 2024',
+        duration: '13か月',
+        sector: 'プラント業界・パッケージ製品',
+        title: 'プラント業界向けパッケージ製品のWEBシステム化',
+        role: 'フロントエンドエンジニア / 設計・API開発',
+        summary:
+          '既存のプラント業界向けパッケージ製品をWEBシステム化するプロジェクトです。現行アプリの動作・仕様を解析し、基本設計・詳細設計・IF／API設計から開発までを担当しました。フロントエンドはTypeScript・React、サーバーサイドはNode.js・Expressで実装し、ベトナムのオフショア開発チームが担当する機能の仕様調整・進捗管理も行いました。',
+        highlights: [
+          '既存パッケージアプリの動作・仕様を解析',
+          '基本設計・詳細設計・IF／API設計を担当',
+          'TypeScript・Reactでフロントエンドを開発（8画面）',
+          'Node.js・Express・PrismaでAPIを開発（12API、MySQL）',
+          'ベトナムのオフショア開発チームへの仕様説明・成果物確認・進捗管理を日本語・英語で実施',
+        ],
+        stack: projectStacks.plant,
+      },
     ],
   },
   experience: {
@@ -112,7 +129,8 @@ export const ja: Dict = {
         period: '2023年5月 — 2024年5月',
         title: 'プラント業界向けパッケージ製品のWEBシステム化',
         description:
-          '既存パッケージアプリを解析し、基本設計・詳細設計・IF／API設計から開発までを担当。TypeScript・Reactで8画面、Node.js・Express・PrismaでAPI 12本を実装。ベトナムのオフショア開発チームへの仕様説明・成果物確認・進捗管理を日本語・英語で実施。',
+          '設計から開発までのWEBシステム化と、オフショア開発チームとの日英での調整を担当。詳細は上記のケーススタディを参照。',
+        featured: true,
       },
       {
         period: '2021年5月 — 2023年4月',
