@@ -54,13 +54,13 @@ export const en: Dict = {
     tag: '2024 — 2026',
     projects: [
       {
-        period: '2025 —',
-        duration: '',
+        period: '2025 — 2026',
+        duration: '12 months',
         sector: 'Rental services · SaaS',
         title: 'Rental Order Management Platform Modernization',
         role: 'Frontend engineer / requirements & API design',
         summary:
-          'A replacement of the order management system for a business that rents out tablets, cameras and smartphones. I worked mainly on the frontend, designing and building the locker-management screens in Next.js, React and Material UI, and joined client meetings to pin down requirements and screen specifications. For the next phase of the replacement, I moved on to requirements definition, design documents and API specification design.',
+          'A replacement of the order management system for a business that rents out tablets, cameras and smartphones. I worked mainly on the frontend, designing and building the locker-management screens in Next.js, React and Material UI, and joined client meetings to pin down requirements and screen specifications. For the next phase of the replacement, I then moved on to requirements definition, design documents and API specification design.',
         highlights: [
           'Designed and implemented the locker-management screens — 8 screens in TypeScript, React and Next.js',
           'Implemented API integration for around 9 APIs using SWR and Axios',
@@ -94,7 +94,7 @@ export const en: Dict = {
     tag: '2013 — 2026',
     entries: [
       {
-        period: 'Oct 2025 —',
+        period: 'Oct 2025 — Sep 2026',
         title: 'Rental Order Management Platform Modernization',
         description:
           'Frontend design and implementation, then requirements definition and API design for the next phase. Full case study above.',
